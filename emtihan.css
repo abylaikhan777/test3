@@ -1,0 +1,70 @@
+.block{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    transition: all;
+    display: flex;
+    transition-duration: 2s;
+    margin-bottom: 5px;
+}
+.block:hover{
+    transform: scale(1.2);
+     rotate:180deg;
+     margin: 20px;
+     animation: block 2s;
+     background-color: rgb(183, 143, 220);
+}
+@keyframes block{
+    0%{
+        background-color: blue;
+    }
+    50%{
+     background-color: blueviolet;
+    }
+    80%{
+         background-color: rgb(183, 143, 220);
+    }
+    100%{
+        background-color: rgb(183, 143, 220);
+    }
+}
+.ball-container{
+    border: dotted;
+    width: 700px;
+}
+.ball{
+    border-radius: 100%;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    animation: ball 10s infinite;
+
+}
+@keyframes ball{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(550px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.rotate img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    animation: rotate 5s infinite;
+    transform: translate(0px);
+    margin-top: 40px;
+}
+
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 1900deg;
+    }
+} 
